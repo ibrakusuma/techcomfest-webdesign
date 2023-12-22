@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ::-webkit-scrollbar {
+    display: none;
+} */
+
+body {
+    font-family: 'Urbanist', sans-serif;
+}
+
+.hamburger-line {
+    @apply w-[30px] h-[2px] my-2 block bg-white dark:bg-dark1;
+}
+
+.hamburger-active > span:nth-child(1) {
+    @apply rotate-45;
+}
+
+.hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+    @apply -rotate-45;
+}
+
+.display-none {
+    @apply hidden;
+}
+
+.active-link {
+    @apply text-dark1 bg-green lg:text-green lg:bg-transparent lg:after:block lg:after:bg-dark1 lg:after:border-b-2 lg:after:border-b-green lg:after:mt-1 lg:after:origin-left lg:after:scale-75;
+}
+
+.title {
+    @apply lg:hover:after:block lg:after:scale-0 lg:hover:after:scale-75 lg:after:border-b-2 lg:after:border-b-dark1 lg:hover:after:border-b-2 lg:hover:after:border-b-dark1 lg:hover:after:dark:border-b-white lg:after:origin-left lg:hover:after:mt-1 transition duration-300 ease-in-out;
+}
+
+.active-card {
+    @apply after:block after:scale-75 lg:after:border-b-2 lg:after:border-b-dark1 lg:after:dark:border-b-white lg:after:mt-1;
+}
+
+.hero-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}

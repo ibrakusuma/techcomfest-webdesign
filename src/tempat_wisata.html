@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jatim Culture</title>
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../dist/output.css">
+    </head>
+<body>
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full flex items-center z-50 bg-dark1 dark:bg-white">
+        <div class="container">
+            <div class="flex items-center justify-between">
+                <div class="py-6">
+                    <a href="#beranda" class="font-bold text-2xl text-white dark:text-gray-700 lg:text-3xl"><span class="text-green">Jatim</span>Culture</a>
+                </div>
+                
+                <div class="flex">
+                    <div class="order-1 lg:order-2 flex items-center me-6 lg:me-0 lg:ms-6">
+                        <ion-icon name="moon" class="moon cursor-pointer text-white dark:text-gray-700 text-[28px] lg:text-2xl"></ion-icon>
+                        <ion-icon name="sunny" class="sun cursor-pointer text-white dark:text-gray-700 text-[28px] lg:text-2xl"></ion-icon>
+                    </div>
+
+                    <button id="hamburger" type="button" class="order-2 lg:order-1 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="order-2 lg:order-1 hidden absolute top-full left-0 w-full bg-dark1 dark:bg-white lg:block lg:static">
+                        <ul class="block text-center lg:flex lg:items-center lg:gap-6">
+                            <li class=" group">
+                                <a href="./index.html?source=tempat_wisata#beranda" class="block w-full font-semibold text-base text-white dark:text-gray-700 tracking-wider py-4 group-hover:bg-green group-hover:text-dark1 lg:group-hover:bg-transparent lg:group-hover:text-green transition duration-300 ease-in-out">BERANDA</a>
+                            </li>
+                            <li class=" group">
+                                <a href="./index.html?source=tempat_wisata#tentang" class="block w-full font-semibold text-base text-white dark:text-gray-700 tracking-wider py-4 group-hover:bg-green group-hover:text-dark1 lg:group-hover:bg-transparent lg:group-hover:text-green transition duration-300 ease-in-out">TENTANG</a>
+                            </li>
+                            <li class=" group">
+                                <a href="./index.html?source=tempat_wisata#jelajahi" class="block w-full font-semibold text-base text-white dark:text-gray-700 tracking-wider py-4 group-hover:bg-green group-hover:text-dark1 lg:group-hover:bg-transparent lg:group-hover:text-green transition duration-300 ease-in-out">JELAJAHI</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Card -->
+    <section class="bg-white py-36 dark:bg-dark1">
+        <div class="container">
+            <div class="flex flex-col gap-8 justify-center items-center">
+                <div>
+                    <h2 class="font-bold text-4xl text-dark1 dark:text-white">Tempat Wisata</h2>
+                </div>
+                <div class="flex flex-wrap gap-8 mb-12">
+                    <p id="monumenTitle" class="title font-semibold text-xl text-dark1 dark:text-white cursor-pointer transition duration-300 ease-in-out" onclick="showContent('monumen')">Monumen</p>
+                    <p id="bangunanTitle" class="title font-semibold text-xl text-dark1 dark:text-white cursor-pointer transition duration-300 ease-in-out" onclick="showContent('bangunan')">Bangunan Bersejarah</p>
+                    <p id="museumTitle" class="title font-semibold text-xl text-dark1 dark:text-white cursor-pointer transition duration-300 ease-in-out" onclick="showContent('museum')">Museum</p>
+                </div>
+            </div>
+            <div>
+                <div id="monumenContent" class="content">
+                    <div class="grid grid-cols-12 gap-6">
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg">
+                            <div>
+                                <img src="../dist/assets/jelajahi/tempat-wisata/monumen/monumen-bambu-runcing.png" alt="Museum Blambangan" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-5">
+                                <h3 class="font-bold text-2xl text-dark1">Monumen Bambu Runcing</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6 lg:text-lg">Sebagai Kota Pahlawan, bambu runcing menjadi salah satu ikon dari Surabaya. Monumen Bambu Runcing ini dibuat untuk memperingati peristiwa pertempuran 10 November 1945. Kala itu, masyarakat Surabaya melawan para penjajah hanya menggunakan senjata dari bambu runcing.</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/tempat-wisata/monumen/monumen-tugu-pahlawan.png" alt="Monumen Tugu Pahlawan" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-5">
+                                <h3 class="font-bold text-2xl text-dark1">Monumen Tugu Pahlawan</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6 lg:text-lg">Monumen Surabaya berikutnya yang merupakan ikon bersejarah dari kota ini adalah Monumen Tugu Pahlawan. Sebagai informasi, Monumen Tugu Pahlawan ini berada di Jalan Pahlawan, Alun-Alun Contong, Bubutan, Kota Surabaya.</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/tempat-wisata/monumen/monumen-jalesveva-jayamahe.png" alt="Monumen Jalesveva Jayamahe" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-5">
+                                <h3 class="font-bold text-2xl text-dark1">Monumen Jalesveva Jayamahe</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6 lg:text-lg">Monumen Surabaya berikutnya ini letaknya tidak jauh dari Pelabuhan Tanjung Perak, yakni di wilayah Koarmatim TNI AL. Adapun, lokasi tepatnya dari monumen yang punya singkatan Monjaya ini berada di Armada Timur Ujung, Kecamatan Semampir, Kota Surabaya.</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/tempat-wisata/monumen/monumen-sura-dan-baya.png" alt="Monumen Sura dan Baya" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-5">
+                                <h3 class="font-bold text-2xl text-dark1">Monumen Sura dan Baya</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6 lg:text-lg">Kota Surabaya diketahui punya lambang berupa ikan hiu dan buaya. Lambang Kota Surabaya ini berasal dari cerita rakyat soal perkelahian antara buaya dan ikan hiu yang saling memperebutkan daerah kekuasaan.</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="bangunanContent" class="content">
+                    <div class="grid grid-cols-12 gap-6">
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/tempat-wisata/bangunan-bersejarah/candi-penataran.png" alt="Candi Penataran" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-6">
+                                <h3 class="font-bold text-2xl text-dark1">Candi Penataran</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6  lg:text-lg">Candi Panataran atau Candi Palah, terletak di Desa Penataran, Kecamatan Nglegok, Blitar. Candi ini berasal dari abad ke-12 dan merupakan salah satu candi Hindu terbesar di Jawa Timur.</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/tempat-wisata/bangunan-bersejarah/candi-singosari.png" alt="Candi Singosari" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-6">
+                                <h3 class="font-bold text-2xl text-dark1">Candi Singosari</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6  lg:text-lg">Candi Singosari terletak di Desa Candirenggo, Kecamatan Singosari, Malang. Candi ini dibangun pada abad ke-13 oleh raja Singosari dan menjadi peninggalan sejarah dari masa kerajaan Singosari.</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/tempat-wisata/bangunan-bersejarah/candi-tikus.png" alt="Candi Tikus" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-6">
+                                <h3 class="font-bold text-2xl text-dark1">Candi Tikus</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6  lg:text-lg">Candi Tikus terletak di Trowulan, Mojokerto. Candi ini merupakan kompleks arkeologis yang diyakini sebagai tempat pemandian kerajaan Majapahit pada abad ke-14.</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/tempat-wisata/bangunan-bersejarah/benteng-vredeburg.png" alt="Benteng Vredeburg" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-6">
+                                <h3 class="font-bold text-2xl text-dark1">Benteng Vredeburg</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6  lg:text-lg">Benteng Vredeburg, juga dikenal sebagai Benteng Pendem, terletak di Malang. Benteng ini dibangun oleh Belanda pada abad ke-18 dan digunakan sebagai markas militer.</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="museumContent" class="content">
+                    <div class="grid grid-cols-12 gap-6">
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/tempat-wisata/museum/museum-surabaya.png" alt="Museum Surabaya" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-6">
+                                <h3 class="font-bold text-2xl text-dark1">Museum Surabaya</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6  lg:text-lg">Museum Surabaya berdiri di bekas gedung Siola yang terletak di perbatasan Jalan Tunjungan dan Jalan Genteng Kali. Museum yang d dibangun dengan tujuan agar masyarakat dan pengunjung dapat mengetahui dan memahami sejarah kota pahlawan ini diresmikan tahun 2015. Museum ini menyimpan berbagai koleksi yang memperlihatkan sejarah Kota Surabaya.</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/tempat-wisata/museum/museum-blambangan.png" alt="Museum Blambangan" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-6">
+                                <h3 class="font-bold text-2xl text-dark1">Museum Blambangan</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6  lg:text-lg">Museum Blambangan berlokasi di Jalan A. Yani no 78, banyuwangi, Jawa Timur. Museum ini didirikan pada tanggal 25 Desember 1977 dan diresmikan oleh Gubernur Jawa Timur pada masa itu. Nama museum ini diambil dari kerajaan yang pernah ada di zaman kejayaan Kerajaan Majapahit, yakni Kerajaan Blambangan.</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/tempat-wisata/museum/museum-bung-karno.png" alt="Museum Bung Karno" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-6">
+                                <h3 class="font-bold text-2xl text-dark1">Museum Bung Karno</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6  lg:text-lg">Museum Bung Karno terletak di Jalan Ir. Soekarno, Sananwetan, Blitar. Lokasi ini berda satu komplek dengan Perpustakaan Bung Karno. Museum yang diresmikan oleh Megawati Soekarno Putri ini sudah ada sejak tahun 2004. Museum ini dibuat untuk mengenal lebih dekat sosok proklamator sekaligus presiden Indonesia.</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/tempat-wisata/museum/museum-wr-soepratman.png" alt="Museum WR. Soepratman" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-6">
+                                <h3 class="font-bold text-2xl text-dark1">Museum WR. Soepratman</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6  lg:text-lg">Bangunan museum ini awalnya adalah rumah milik kakak pertama W.R. Soepratman. W.R. Soepratman tinggal di rumah tersebut pada tahun 1937, hingga akhirnya meninggal dunia pada 17 Agustus 1938. Di dalam museum berisi koleksi barang-barang yang berkaitan dengan W.R Soepratman, seperti foto-foto W.R. Soepratman dengan keluarga dan teman dekatnya</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="pt-16 bg-dark1 text-white dark:text-dark1 dark:shadow-md dark:shadow-white">
+        <div class="container">
+            <div class="flex flex-col justify-center items-center gap-2 sm:flex-row sm:justify-between border-b border-b-white pb-3">
+                <div>
+                    <a href="./index.html?source=tempat_wisata#beranda" class="font-bold text-2xl text-white lg:text-3xl"><span class="text-green">Jatim</span>Culture</a>
+                </div>
+                <div>
+                    <a href="./index.html?source=tempat_wisata#beranda" class="font-medium text-base text-white tracking-wider py-3 hover:text-green transition duration-300 ease-in-out ms-2">Beranda</a>
+
+                    <a href="./index.html?source=tempat_wisata#tentang" class="font-medium text-base text-white tracking-wider py-3 hover:text-green transition duration-300 ease-in-out ms-2">Tentang</a>
+
+                    <a href="./index.html?source=tempat_wisata#jelajahi" class="font-medium text-base text-white tracking-wider py-3 hover:text-green transition duration-300 ease-in-out ms-2">Jelajahi</a>
+                </div>
+            </div>
+            <div class="flex justify-center items-center py-6">
+                <p class="font-roboto text-sm text-white text-center">
+                    &copy; Ctrl Yourself. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

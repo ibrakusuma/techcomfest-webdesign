@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jatim Culture</title>
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../dist/output.css">
+    </head>
+<body>
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full flex items-center z-50 bg-dark1 dark:bg-white">
+        <div class="container">
+            <div class="flex items-center justify-between">
+                <div class="py-6">
+                    <a href="#beranda" class="font-bold text-2xl text-white dark:text-gray-700 lg:text-3xl"><span class="text-green">Jatim</span>Culture</a>
+                </div>
+                
+                <div class="flex">
+                    <div class="order-1 lg:order-2 flex items-center me-6 lg:me-0 lg:ms-6">
+                        <ion-icon name="moon" class="moon cursor-pointer text-white dark:text-gray-700 text-[28px] lg:text-2xl"></ion-icon>
+                        <ion-icon name="sunny" class="sun cursor-pointer text-white dark:text-gray-700 text-[28px] lg:text-2xl"></ion-icon>
+                    </div>
+
+                    <button id="hamburger" type="button" class="order-2 lg:order-1 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="order-2 lg:order-1 hidden absolute top-full left-0 w-full bg-dark1 dark:bg-white lg:block lg:static">
+                        <ul class="block text-center lg:flex lg:items-center lg:gap-6">
+                            <li class=" group">
+                                <a href="./index.html?source=tempat_wisata#beranda" class="block w-full font-semibold text-base text-white dark:text-gray-700 tracking-wider py-4 group-hover:bg-green group-hover:text-dark1 lg:group-hover:bg-transparent lg:group-hover:text-green transition duration-300 ease-in-out">BERANDA</a>
+                            </li>
+                            <li class=" group">
+                                <a href="./index.html?source=tempat_wisata#tentang" class="block w-full font-semibold text-base text-white dark:text-gray-700 tracking-wider py-4 group-hover:bg-green group-hover:text-dark1 lg:group-hover:bg-transparent lg:group-hover:text-green transition duration-300 ease-in-out">TENTANG</a>
+                            </li>
+                            <li class=" group">
+                                <a href="./index.html?source=tempat_wisata#jelajahi" class="block w-full font-semibold text-base text-white dark:text-gray-700 tracking-wider py-4 group-hover:bg-green group-hover:text-dark1 lg:group-hover:bg-transparent lg:group-hover:text-green transition duration-300 ease-in-out">JELAJAHI</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Card -->
+    <section class="bg-white py-36 dark:bg-dark1">
+        <div class="container">
+            <div class="flex flex-col gap-8 justify-center items-center">
+                <div>
+                    <h2 class="font-bold text-4xl text-dark1 dark:text-white">Budaya</h2>
+                </div>
+                <div class="flex flex-wrap gap-8 mb-12">
+                    <p id="tariTitle" class="title font-semibold text-xl text-dark1 dark:text-white cursor-pointer transition duration-300 ease-in-out" onclick="showContent('tari')">Tari</p>
+                    <p id="musikTitle" class="title font-semibold text-xl text-dark1 dark:text-white cursor-pointer transition duration-300 ease-in-out" onclick="showContent('musik')">Musik Tradisional</p>
+                    <p id="adatTitle" class="title font-semibold text-xl text-dark1 dark:text-white cursor-pointer transition duration-300 ease-in-out" onclick="showContent('adat')">Adat Istiadat</p>
+                    <p id="makananTitle" class="title font-semibold text-xl text-dark1 dark:text-white cursor-pointer transition duration-300 ease-in-out" onclick="showContent('makanan')">Makanan Tradisional</p>
+                </div>
+            </div>
+            <div>
+                <div id="tariContent" class="content">
+                    <div class="grid grid-cols-12 gap-6">
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg">
+                            <div>
+                                <img src="../dist/assets/jelajahi/tari/tari-reog-ponorogo.png" alt="Tari Reog Ponorogo" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-5">
+                                <h3 class="font-bold text-2xl text-dark1">Tari Reog Ponorogo</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6 lg:text-lg">Tari Reog berasal dari Ponorogo, Jawa Timur. Tarian ini melibatkan penari yang mengenakan topeng besar dan berat, seringkali menggambarkan makhluk mistis atau hewan mitologis</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/tari/tari-gandrung.png" alt="Tari Gandrung" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-5">
+                                <h3 class="font-bold text-2xl text-dark1">Tari Gandrung</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6 lg:text-lg">Tari Gandrung berasal dari Banyuwangi, Jawa Timur. Ini adalah tarian rakyat yang penuh dengan nuansa romantis dan kegembiraan.</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/tari/tari-jaranan-buto.png" alt="Tari Jaranan Buto" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-5">
+                                <h3 class="font-bold text-2xl text-dark1">Tari Jaranan Buto</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6 lg:text-lg">Tarian ini melibatkan penari dan penonton dalam pertunjukan yang menggambarkan pertempuran antara kelompok-kelompok jaranan</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/tari/tari-remo.png" alt="Tari Remo" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-5">
+                                <h3 class="font-bold text-2xl text-dark1">Tari Remo</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6 lg:text-lg">Tari Remo berasal dari Malang, Jawa Timur. Ini adalah tarian yang menggambarkan semangat kegembiraan dan kehidupan.</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="musikContent" class="content">
+                    <div class="grid grid-cols-12 gap-6">
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/musik_tradisional/gamelan.png" alt="Gamelan" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-6">
+                                <h3 class="font-bold text-2xl text-dark1">Gamelan</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6  lg:text-lg">Gamelan adalah ansambel musik tradisional Jawa yang terdiri dari berbagai instrumen perkusi seperti gongs, metallophones, kendhang (gendang), saron, dan slenthem</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/musik_tradisional/saron.png" alt="Saron" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-6">
+                                <h3 class="font-bold text-2xl text-dark1">Saron</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6  lg:text-lg">Saron atau biasa dikenal juga dengan ricik adalah salah satu instrumen gamelan yang masuk dalam golongan balungan atau alat musik jenis bilahan (wilahan) dari logam.</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/musik_tradisional/lokananta.png" alt="Lokananta" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-6">
+                                <h3 class="font-bold text-2xl text-dark1">Lokananta</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6  lg:text-lg">Lokananta adalah kelompok musik yang menggabungkan unsur-unsur tradisional Jawa dengan elemen musik kontemporer. </p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/musik_tradisional/campursari.png" alt="Campursari" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-6">
+                                <h3 class="font-bold text-2xl text-dark1">Campursari</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6  lg:text-lg">Campursari adalah genre musik Jawa yang menggabungkan unsur-unsur musik keroncong, gamelan, dan pop.</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="adatContent" class="content">
+                    <div class="grid grid-cols-12 gap-6">
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/adat_istiadat/siraman.png" alt="Siraman" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-6">
+                                <h3 class="font-bold text-2xl text-dark1">Siraman</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6  lg:text-lg"> tradisi pemandian calon pengantin yang dilakukan sebelum pernikahan. Biasanya, siraman dilakukan oleh keluarga dan kerabat yang lebih tua sebagai simbol membersihkan dan memberkati calon pengantin.</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/adat_istiadat/sesaji.png" alt="Sesaji" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-6">
+                                <h3 class="font-bold text-2xl text-dark1">Sesaji</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6  lg:text-lg">Sesaji adalah upacara persembahan kepada leluhur atau roh yang dilakukan dalam berbagai konteks, seperti pernikahan, pertanian, atau acara keagamaan.</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/adat_istiadat/mapag-sri.png" alt="Mapag Sri" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-6">
+                                <h3 class="font-bold text-2xl text-dark1">Mapag Sri</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6  lg:text-lg">Mapag Sri adalah tradisi yang terkait dengan pertanian. Biasanya dilakukan sebelum atau selama musim tanam sebagai bentuk upacara adat untuk memohon kesuburan dan keberkahan hasil pertanian.</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/adat_istiadat/tingkeban.png" alt="Tingkeban" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-6">
+                                <h3 class="font-bold text-2xl text-dark1">Tingkeban</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6  lg:text-lg"> Tradisi di mana keluarga besar dan kerabat berkumpul untuk memberikan dukungan dan doa kepada ibu hamil. Acara ini sering diadakan menjelang kelahiran sebagai bentuk persiapan dan kegembiraan bersama.</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="makananContent" class="content">
+                    <div class="grid grid-cols-12 gap-6">
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/makanan_tradisional/rawon.png" alt="Rawon" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-6">
+                                <h3 class="font-bold text-2xl text-dark1">Rawon</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6  lg:text-lg">Warnanya memang gelap, umumnya berwarna cokelat kehitaman. Tetapi kamu pasti akan tergoda dengan rasanya yang sedap.</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/makanan_tradisional/rujak-cingur.png" alt="Rujak Cingur" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-6">
+                                <h3 class="font-bold text-2xl text-dark1">Rujak Cingur</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6  lg:text-lg">Rujak cingur, yang berasal dari Surabaya. Bagi kamu yang belum tahu, kata `cingur` memiliki arti `mulut` dalam bahasa Indonesia, yang merujuk pada salah satu bahan utama yaitu irisan moncong sapi yang dimasak.</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/makanan_tradisional/nasi-krawu.png" alt="Museum Bung Karno" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-6">
+                                <h3 class="font-bold text-2xl text-dark1">Nasi Krawu</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6  lg:text-lg">Nasi krawu menjadi makanan khas Jawa Timur dan asal daerahnya adalah Gresik. Nama nasi krawu memang unik, karena berasal dari kata `krawukan` yang memiliki arti mengambil dengan jari tangan.</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-span-12 md:col-span-6 lg:col-span-4 bg-white rounded-lg shadow-lg border dark:shadow-slate-500 dark:border-none">
+                            <div>
+                                <img src="../dist/assets/jelajahi/makanan_tradisional/sego-tempong.png" alt="Sego Tempong" class="object-cover w-full rounded-tl-md rounded-tr-md">
+                            </div>
+                            <div class="flex flex-col gap-4 p-6">
+                                <h3 class="font-bold text-2xl text-dark1">Sego Tempong</h3>
+                                <p class="font-medium text-base tracking-wide text-dark1 line-clamp-6  lg:text-lg">Makanan khas daerah Banyuwangi, yaitu sego tempong. Tempong adalah satu kata dalam bahasa Osing, yaitu bahasa asli Banyuwangi yang memiliki arti `tampar`.</p>
+                                <a href="#" class="inline-flex items-center gap-3 font-semibold text-white bg-green py-2 px-4 rounded-md w-fit hover:bg-green2 transition duration-300 ease-in-out">Lihat Lokasi <ion-icon name="arrow-forward" class="text-lg text-white"></ion-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="pt-16 bg-dark1 text-white dark:text-dark1 dark:shadow-md dark:shadow-white">
+        <div class="container">
+            <div class="flex flex-col justify-center items-center gap-2 sm:flex-row sm:justify-between border-b border-b-white pb-3">
+                <div>
+                    <a href="./index.html?source=tempat_wisata#beranda" class="font-bold text-2xl text-white lg:text-3xl"><span class="text-green">Jatim</span>Culture</a>
+                </div>
+                <div>
+                    <a href="./index.html?source=tempat_wisata#beranda" class="font-medium text-base text-white tracking-wider py-3 hover:text-green transition duration-300 ease-in-out ms-2">Beranda</a>
+
+                    <a href="./index.html?source=tempat_wisata#tentang" class="font-medium text-base text-white tracking-wider py-3 hover:text-green transition duration-300 ease-in-out ms-2">Tentang</a>
+
+                    <a href="./index.html?source=tempat_wisata#jelajahi" class="font-medium text-base text-white tracking-wider py-3 hover:text-green transition duration-300 ease-in-out ms-2">Jelajahi</a>
+                </div>
+            </div>
+            <div class="flex justify-center items-center py-6">
+                <p class="font-roboto text-sm text-white text-center">
+                    &copy; Ctrl Yourself. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

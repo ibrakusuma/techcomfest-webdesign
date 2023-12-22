@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jatim Culture</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full flex items-center z-50 bg-dark1 dark:bg-white">
+        <div class="container">
+            <div class="flex items-center justify-between">
+                <div class="py-6">
+                    <a href="#beranda" class="font-bold text-2xl text-white dark:text-dark1 lg:text-3xl"><span class="text-green">Jatim</span>Culture</a>
+                </div>
+                
+                <div class="flex">
+                    <div class="order-1 lg:order-2 flex items-center me-6 lg:me-0 lg:ms-6">
+                        <ion-icon name="moon" class="moon cursor-pointer text-white dark:text-dark1 text-[28px] lg:text-2xl"></ion-icon>
+                        <ion-icon name="sunny" class="sun cursor-pointer text-white dark:text-dark1 text-[28px] lg:text-2xl"></ion-icon>
+                    </div>
+
+                    <button id="hamburger" type="button" class="order-2 lg:order-1 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="order-2 lg:order-1 hidden absolute top-full left-0 w-full bg-dark1 dark:bg-white lg:block lg:static">
+                        <ul class="block text-center lg:flex lg:items-center lg:gap-6">
+                            <li class=" group">
+                                <a href="#beranda" class="block w-full font-semibold text-base text-white dark:text-gray-700 tracking-wider py-4 group-hover:bg-green group-hover:text-dark1 lg:group-hover:bg-transparent lg:group-hover:text-green transition duration-300 ease-in-out">BERANDA</a>
+                            </li>
+                            <li class=" group">
+                                <a href="#tentang" class="block w-full font-semibold text-base text-white dark:text-gray-700 tracking-wider py-4 group-hover:bg-green group-hover:text-dark1 lg:group-hover:bg-transparent lg:group-hover:text-green transition duration-300 ease-in-out">TENTANG</a>
+                            </li>
+                            <li class=" group">
+                                <a href="#jelajahi" class="block w-full font-semibold text-base text-white dark:text-gray-700 tracking-wider py-4 group-hover:bg-green group-hover:text-dark1 lg:group-hover:bg-transparent lg:group-hover:text-green transition duration-300 ease-in-out">JELAJAHI</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="">
+        <div class="hero-image relative">
+            <img src="../dist/assets/beranda/hero.png" alt="" class="h-screen w-full object-cover">
+                
+            <div class="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-screen z-10 px-4 pt-20">
+                <h1 class="font-semibold text-4xl text-white text-center md:text-5xl lg:text-6xl">Budaya <span class="text-green">Jawa Timur</span></h1>
+                <p class="font-medium text-base md:text-lg lg:text-xl text-white max-w-[35rem] text-center mt-4 mb-8 tracking-wider">Temukan warisan budaya dan keindahan tempat wisata yang memukau di Jawa Timur. Selamat menikmati perjalanan virtual Anda!</p>
+                <a href="#tentang" class=""><img src="../dist/assets/beranda/mouse.svg" alt="scroll" class="w-4 lg:w-6"></a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tentang Section -->
+    <section id="tentang" class="py-36 dark:bg-dark2">
+        <div class="container">
+            <div class="flex flex-col items-center gap-6 lg:flex-row-reverse ">
+                <div class="w-full lg:w-2/5">
+                    <img src="../dist/assets/tentang/jawa-timur.png" alt="Provinsi Jawa Timur" class="rounded-lg">
+                </div>
+
+                <div class="lg:w-3/5">
+                    <h3 class="font-bold text-3xl pb-4 text-dark1 dark:text-white">Jawa Timur</h3>
+                    <p class="font-medium text-lg text-dark1 md:text-xl dark:text-white tracking-wider">Jawa Timur dikenal sebagai pusat kebudayaan Jawa yang kental, dengan berbagai seni tradisional seperti wayang kulit, tari Jawa, dan batik. Di samping itu, provinsi ini juga memiliki banyak situs sejarah, termasuk candi-candi bersejarah seperti Candi Borobudur dan Candi Prambanan, yang merupakan warisan dunia UNESCO.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jelajahi Section -->
+    <section id="jelajahi" class="py-36 bg-background-pattern object-cover bg-center bg-white dark:bg-dark1 relative">
+        <div class="container">
+            <div>
+                <h2 class="font-bold text-2xl uppercase mb-16 text-center text-dark1 dark:text-white md:text-3xl lg:text-4xl">MARI KITA <span class="text-green">JELAJAHI</span> KEKAYAAN BUDAYA YANG ADA DI <span class="text-green">JAWA TIMUR</span></h2>
+            </div>
+
+            <div>
+                <div>
+                    <div class="flex flex-col gap-6 justify-between md:items-center md:flex-row">
+                        <div>
+                            <h3 class="font-bold text-xl text-dark1 dark:text-white md:text-2xl">Tempat Wisata</h3>
+                            <p class="font-medium text-base text-dark1 dark:text-white tracking-wide md:text-lg">Ayo jelajahi tempat-tempat yang menarik!</p>
+                        </div>
+                        <div>
+                            <a href="./tempat_wisata.html" class="inline-flex items-center gap-3 font-bold text-base text-green border-2 border-green py-1 px-3 rounded-md dark:text-green dark:border-green hover:bg-green hover:text-white hover:dark:text-white hover:dark:border-green transition duration-300 ease-in-out md:text-lg">Lihat Selengkapnya <ion-icon name="arrow-forward" class="text-lg"></ion-icon></a>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12 gap-6 mt-6 justify-items-center">
+                        <a href="./tempat_wisata.html" class="col-span-12 md:col-span-6 lg:col-span-4 shadow-lg dark:shadow-slate-500 hover:rotate-1 hover:scale-[1.03] transition duration-300 ease-in-out rounded-lg">
+                            <img src="../dist/assets/jelajahi/tempat-wisata/museum/museum-bung-karno.png" alt="museum bung karno" class="rounded-lg">
+                        </a>
+                        <a href="./tempat_wisata.html" class="col-span-12 md:col-span-6 lg:col-span-4 shadow-lg dark:shadow-slate-500 hover:scale-[1.03] transition duration-300 ease-in-out rounded-lg">
+                            <img src="../dist/assets/jelajahi/tempat-wisata/monumen/monumen-sura-dan-baya.png" alt="monumen sura dan baya" class="rounded-lg">
+                        </a>
+                        <a href="./tempat_wisata.html" class="col-span-12 md:col-span-6 lg:col-span-4 shadow-lg dark:shadow-slate-500 hover:-rotate-1 hover:scale-[1.03] transition duration-300 ease-in-out rounded-lg md:place-self-center lg:place-self-center">
+                            <img src="../dist/assets/jelajahi/tempat-wisata/monumen/monumen-jalesveva-jayamahe.png" alt="monumen jalesveva jayamahe" class="rounded-lg">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="mt-16">
+                    <div class="flex flex-col gap-6 justify-between md:items-center md:flex-row">
+                        <div>
+                            <h3 class="font-bold text-xl text-dark1 dark:text-white md:text-2xl">Budaya</h3>
+                            <p class="font-medium text-base text-dark1 dark:text-white tracking-wide md:text-lg">Kenalan sama budaya Jawa Timur yuk!</p>
+                        </div>
+                        <div>
+                            <a href="./budaya.html" class="inline-flex items-center gap-3 font-bold text-base text-green border-2 border-green py-1 px-3 rounded-md dark:text-green dark:border-green hover:bg-green hover:text-white hover:dark:text-white hover:dark:border-green transition duration-300 ease-in-out md:text-lg">Lihat Selengkapnya <ion-icon name="arrow-forward" class="text-lg"></ion-icon></a>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12 gap-6 mt-6 justify-items-center">
+                        <a href="./budaya.html" class="col-span-12 md:col-span-6 lg:col-span-4 shadow-lg dark:shadow-slate-500 hover:rotate-1 hover:scale-[1.03] transition duration-300 ease-in-out">
+                            <img src="../dist/assets/jelajahi/tari/tari-jaranan-buto.png" alt="tari jaranan buto" class="rounded-lg">
+                        </a>
+                        <a href="./budaya.html" class="col-span-12 md:col-span-6 lg:col-span-4 shadow-lg dark:shadow-slate-500 hover:scale-[1.03] transition duration-300 ease-in-out">
+                            <img src="../dist/assets/jelajahi/tari/tari-reog-ponorogo.png" alt="tari reog ponorogo" class="rounded-lg">
+                        </a>
+                        <a href="./budaya.html" class="col-span-12 md:col-span-6 lg:col-span-4 shadow-lg dark:shadow-slate-500 hover:-rotate-1 hover:scale-[1.03] transition duration-300 ease-in-out md:place-self-center lg:place-self-center">
+                            <img src="../dist/assets/jelajahi/tari/tari-gandrung.png" alt="tari gandrung" class="rounded-lg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dark:bg-dark2 py-36">
+        <div class="container">
+            <div class="flex flex-col justify-between gap-8 md:flex-row lg:gap-2">
+                <div class="order-1 md:order-2 md:w-2/3">
+                    <h3 class="font-bold text-3xl pb-4 text-dark1 dark:text-white">Pentingnya Melestarikan Budaya</h3>
+                    <p class="font-medium text-lg text-dark1 md:text-xl dark:text-white tracking-wide">Kebudayaan yang berkembang di Indonesia saat ini tidak terlepas dari peran para leluhur yang berjuang sejak awal agar kebudayaan dapat tumbuh dan berkembang serta menjaga agar kebudayaan yang sudah ada ini tidak hilang begitu saja.</p>
+                    <p class="font-medium text-lg text-dark1 md:text-xl dark:text-white mt-4 tracking-wide">Kebudayaan merupakan identitas bangsa, ciri khas suatu bangsa yang memiliki keistimewaan. Indonesia memiliki beragam budaya yang diturunkan dari generasi ke generasi oleh berbagai macam suku.</p>
+                </div>
+                <div class="order-2 md:order-1 flex justify-center items-center md:justify-end">
+                    <img src="../dist/assets/jelajahi/pentingnya-melestarikan-budaya.png" alt="Pentingnya Melestarikan Budaya" class="rounded-lg w-full md:w-80 ">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="pt-16 bg-dark1 text-white dark:text-dark1 dark:shadow-md dark:shadow-white">
+        <div class="container">
+            <div class="flex flex-col justify-center items-center gap-2 sm:flex-row sm:justify-between border-b border-b-white pb-3">
+                <div>
+                    <a href="#beranda" class="font-bold text-2xl text-white lg:text-3xl"><span class="text-green">Jatim</span>Culture</a>
+                </div>
+                <div>
+                    <a href="#beranda" class="font-medium text-base text-white tracking-wider py-3 hover:text-green transition duration-300 ease-in-out ms-2">Beranda</a>
+
+                    <a href="#tentang" class="font-medium text-base text-white tracking-wider py-3 hover:text-green transition duration-300 ease-in-out ms-2">Tentang</a>
+
+                    <a href="#jelajahi" class="font-medium text-base text-white tracking-wider py-3 hover:text-green transition duration-300 ease-in-out ms-2">Jelajahi</a>
+                </div>
+            </div>
+            <div class="flex justify-center items-center py-6">
+                <p class="font-roboto text-sm text-white text-center">
+                    &copy; Ctrl Yourself. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    
+
+
+
+
+
+    <!-- Ionicon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
